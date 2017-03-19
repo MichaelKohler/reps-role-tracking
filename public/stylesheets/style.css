@@ -59,29 +59,36 @@ a:hover, a:visited {
 }
 
 header, footer {
-  overflow: hidden;
-  height: 60px;
+  height: 80px;
   padding-left: 30px;
 }
 
 header {
+  display: inline-flex;
+  width: 100%;
+
   background-color: #82D1F5;
   color: #000;
+}
+
+header img {
+  height: 80px;
 }
 
 footer {
   background-color: #000;
   color: #FFF;
-}
-
-nav {
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
   display: inline-flex;
+  height: 100%;
+  margin-block-start: 0em;
   list-style-type: none;
-  padding-left: 0px;
+  padding-left: 100px;
+  align-items: center;
 }
 
 nav ul li {
