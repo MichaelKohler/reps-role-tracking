@@ -7,6 +7,9 @@ block content
     - each mentor in reps
       - if (mentor.mentor)
         h2= mentor.mentor.first_name + ' ' + mentor.mentor.last_name
+        - if (mentor.mentor.response.response)
+          h4 Responded with:&nbsp;
+            = mentor.mentor.response.response
       - else
         h2 No mentor assigned
     
@@ -23,5 +26,5 @@ block content
                 a(href=rep.profile.remo_url)
                   = rep.first_name + ' ' + rep.last_name
               td= rep.profile.country
-              td
-              td
+              td= rep.response.timestamp
+              td= rep.response.response

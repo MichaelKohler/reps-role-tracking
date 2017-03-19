@@ -4,21 +4,23 @@ const router = express.Router();
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  const reps = Reps.getWithMentorInfo();
-
-  res.render('index', {
-    title: 'Reps Role Focus Tracking',
-    reps
-  });
+  Reps.getWithMentorInfo()
+    .then((reps) => {
+      res.render('index', {
+        title: 'Reps Role Focus Tracking',
+        reps
+      });
+    });
 });
 
 router.get('/mentors', (req, res, next) => {
-  const reps = Reps.getGroupedByMentor();
-
-  res.render('mentors', {
-    title: 'Reps Role Focus Tracking - by mentor',
-    reps
-  });
+  Reps.getGroupedByMentor()
+    .then((reps) => {
+      res.render('mentors', {
+        title: 'Reps Role Focus Tracking - by mentor',
+        reps
+      });
+    });
 });
 
 module.exports = router;

@@ -11,6 +11,7 @@ Then you can start the server with:
 
 ```
 $ git clone <URL>
+$ cp config-example.json config.json
 $ npm install
 $ npm start
 ```
