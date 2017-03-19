@@ -98,3 +98,7 @@ nav a, nav a:hover, nav a:visited {
 .container {
   padding: 0px 30px 30px 30px;
 }
+
+.github-link {
+  padding-left: 300px;
+}

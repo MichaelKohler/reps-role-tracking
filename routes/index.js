@@ -32,4 +32,14 @@ router.get('/mentors', (req, res, next) => {
     });
 });
 
+router.get('/country', (req, res, next) => {
+  Reps.getGroupedByCountry()
+    .then((countries) => {
+      res.render('country', {
+        title: 'Reps Role Focus Tracking - by country',
+        countries
+      });
+    });
+});
+
 module.exports = router;

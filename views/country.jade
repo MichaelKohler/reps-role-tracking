@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .container
+    h1= title
+    
+    table
+      theader
+        th Country
+        th Reps today
+        th Reps who responded
+        th Mobilizers
+        th Functional doers
+      tbody
+        - each country in countries
+          tr
+            td= country.name
+            td= country.today
+            td= country.responded
+            td= country.mobilizers
+            td= country.functional
