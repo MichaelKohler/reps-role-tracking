@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .container
+    h1= title
+    
+    - each mentor in reps
+      - if (mentor.mentor)
+        h2= mentor.mentor.first_name + ' ' + mentor.mentor.last_name
+      - else
+        h2 No mentor assigned
+    
+      table
+        theader
+          th Name
+          th Country
+          th responded on
+          th responded with
+        tbody
+          - each rep in mentor.mentees
+            tr
+              td
+                a(href=rep.profile.remo_url)
+                  = rep.first_name + ' ' + rep.last_name
+              td= rep.profile.country
+              td
+              td
