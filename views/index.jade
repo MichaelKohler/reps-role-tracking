@@ -4,6 +4,20 @@ block content
   .container
     h1= title
     
-    ul
-    - each rep in reps
-      li= rep.display_name 
+    table
+      theader
+        th Name
+        th Country
+        th Mentor
+        th is a mentor
+        th responded on
+        th responded with
+      tbody
+        - each rep in reps
+          tr
+            td
+              a(href=rep.profile.remo_url)
+                = rep.first_name + ' ' + rep.last_name
+            td= rep.profile.country
+            td= rep.profile.mentor ? rep.profile.mentor.first_name + ' ' + rep.profile.mentor.last_name : ''
+            td= rep.isMentor ? 'x' : ''
