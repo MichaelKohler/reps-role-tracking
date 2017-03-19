@@ -4,22 +4,17 @@ block content
   .container
     h1= title
     
-    table
-      theader
-        th Name
-        th Country
-        th Mentor
-        th is a mentor
-        th responded on
-        th responded with
-      tbody
-        - each rep in reps
-          tr
-            td
-              a(href=rep.profile.remo_url)
-                = rep.first_name + ' ' + rep.last_name
-            td= rep.profile.country
-            td= rep.profile.mentor ? rep.profile.mentor.first_name + ' ' + rep.profile.mentor.last_name : ''
-            td= rep.isMentor ? 'x' : ''
-            td= rep.response.timestamp
-            td= rep.response.response
+    h3 Total Reps:&nbsp;
+      = totals.reps
+
+    h3 Total Responses:&nbsp;
+      = totals.responses
+      
+    h3 Total Responses in %:&nbsp;
+      = totals.ratio
+    
+      h3 Total Reps Mentors who didn't respond yet:&nbsp;
+        = totals.noMentorResponse
+    
+    h3 Total Reps with a mentor who didn't respond yet:&nbsp;
+      = totals.repsWithNoMentorResponse
