@@ -1,5 +1,7 @@
 {
   "sheet_id": "yoursheetid",
   "mapping_field": "your google field that has a link to the profile",
-  "question_field": "your google field that has the response to the main question"
+  "question_field": "your google field that has the response to the main question",
+  "mobilizers_answer": "your google radio button content for mobilizers",
+  "functional_answer": "your google radio button content for functional doers"
 }
