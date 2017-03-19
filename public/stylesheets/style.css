@@ -134,3 +134,38 @@ nav a, nav a:hover, nav a:visited {
 .github-link {
   font-weight: normal;
 }
+
+.overview {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #82D1F5;
+  padding: 20px;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.card h3 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.card span {
+  font-size: 2em;
+}
+
+.card span span {
+  font-size: 1em;
+}

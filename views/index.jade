@@ -4,26 +4,37 @@ block content
   .container
     h1= title
     
-    h3 Total Reps:&nbsp;
-      = totals.reps
+    section.overview
+      section.card
+        h3 Total Reps
+        span= totals.reps
 
-    h3 Total Responses:&nbsp;
-      = totals.responses
+      section.card
+        h3 Total Responses
+        span= totals.responses
+        
+      section.card
+        h3 Total Responses in %
+        span= totals.ratio
+          span %
       
-    h3 Total Responses in %:&nbsp;
-      = totals.ratio
+      section.card
+        h3 Total Mentors not responded yet
+        span= totals.noMentorResponse
+      
+      section.card
+        h3 Total Reps with an inactive (?) mentor
+        span= totals.repsWithNoMentorResponse
     
-      h3 Total Reps Mentors who didn't respond yet:&nbsp;
-        = totals.noMentorResponse
-    
-    h3 Total Reps with a mentor who didn't respond yet:&nbsp;
-      = totals.repsWithNoMentorResponse
-  
-    h3 Total Mobilizers:&nbsp;
-      = totals.mobilizers
+      section.card
+        h3 Total Mobilizers
+        span= totals.mobilizers
       
-    h3 Total Functional Doers:&nbsp;
-      = totals.functional
-      
-    h3 Ratio of mobilizers of all responses:&nbsp;
-      = totals.choiceRatio
+      section.card
+        h3 Total Functional Doers
+        span= totals.functional
+        
+      section.card
+        h3 Ratio of mobilizers
+        span= totals.choiceRatio
+          span %
