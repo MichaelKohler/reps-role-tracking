@@ -16,4 +16,4 @@ $ npm install
 $ npm start
 ```
 
-Now you can access the website for it at ```localhost:3000```.
+Now you can access the website for it at ```localhost:5500```.
