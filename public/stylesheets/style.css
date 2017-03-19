@@ -1,0 +1,100 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0px;
+  color: #4D4E53;
+  background-color: #D7D3C8;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+tr {
+  border-bottom: 1px solid #b4b5b9;
+}
+
+th tr {
+  border-bottom: 0px;
+}
+
+table td, table th {
+  padding: 5px;
+}
+
+th {
+  text-align: left;
+  background-color: #C13832;
+  color: #FFF;
+}
+
+a {
+  color: #4d8a9c;
+  text-decoration: none;
+}
+
+a:hover, a:visited {
+  color: #22505d;
+}
+
+@media only screen and (max-device-width : 768px) {
+  header {
+    display: none;
+  }
+}
+
+header, footer {
+  overflow: hidden;
+  height: 60px;
+  background-color: #4D4E53;
+  color: #FFF;
+  padding-left: 30px;
+}
+
+footer {
+  height: 50px;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav ul {
+  display: inline-flex;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+nav ul li {
+  margin-right: 50px;
+  line-height: 30px;
+  font-size: 1.1em;
+}
+
+nav ul li:last-child {
+  margin-right: 0px;
+}
+
+nav a, nav a:hover, nav a:visited {
+  color: inherit;
+}
+
+.container {
+  padding: 0px 30px 30px 30px;
+}
