@@ -11,11 +11,15 @@ body {
 }
 
 h1 {
+  display: inline-block;
+  font-family: 'Arvo', serif;
   font-size: 3rem;
-  text-transform: uppercase;
+  background-color: #000;
+  color: #FFF;
+  padding: 10px;
 }
 
-h2 {
+h2:not(:first-of-type) {
   margin-top: 50px;
 }
 
