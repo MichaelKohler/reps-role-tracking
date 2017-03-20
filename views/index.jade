@@ -2,7 +2,8 @@ extends layout
 
 block content
   .container
-    h1= title
+    .overview-title-container
+      h1= title
     
     section.overview
       section.card
@@ -14,7 +15,7 @@ block content
         span= totals.responses
         
       section.card
-        h3 Total Responses in %
+        h3 Total Responses
         span= totals.ratio
           span %
       

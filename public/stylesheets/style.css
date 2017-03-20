@@ -135,10 +135,16 @@ nav a, nav a:hover, nav a:visited {
   font-weight: normal;
 }
 
+.overview-title-container {
+  display: flex;
+  justify-content: center;
+}
+
 .overview {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -149,10 +155,10 @@ nav a, nav a:hover, nav a:visited {
   align-items: center;
   background-color: #82D1F5;
   padding: 20px;
-  min-width: 300px;
-  max-width: 300px;
-  min-height: 300px;
-  max-height: 300px;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 250px;
+  max-height: 250px;
   margin-right: 5px;
   margin-top: 10px;
 }
