@@ -12,6 +12,7 @@ block content
         th is a mentor
         th responded on
         th responded with
+        th last report date
       tbody
         - each rep in reps
           tr
@@ -23,3 +24,4 @@ block content
             td= rep.isMentor ? 'x' : ''
             td= rep.response.timestamp
             td= rep.response.response
+            td= rep.lastReportDate

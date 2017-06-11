@@ -47,4 +47,13 @@ if (process.env.FETCH_REPS && process.env.FETCH_REPS === 'true') {
   fetch.fetchAll();
 }
 
+// ATTENTION: Only run this when necessary. This will fetch all new activities
+// we haven't fetched yet. In any case, it will request the number of pages and
+// then it will check if we already have the specific details.
+if (process.env.FETCH_REPS_ACTIVITIES && process.env.FETCH_REPS_ACTIVITIES === 'true') {
+  const MAX_NUMBER_OF_PAGES = 592; // 592 == 2015-09-01
+  const fetch = new Fetcher();
+  fetch.fetchAllActivities(MAX_NUMBER_OF_PAGES);
+}
+
 module.exports = app;
